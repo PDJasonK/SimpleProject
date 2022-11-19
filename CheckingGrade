@@ -1,0 +1,58 @@
+package SocialNumber;
+
+import java.util.Scanner;
+
+public class GradeChecker {
+
+	public static void main(String[] args) {
+		
+		int score = 0 ;
+		char grade = ' ' , opt = '0';
+		System.out.print("Type your score from test");
+		
+		Scanner sc = new Scanner(System.in);
+		score = sc.nextInt();
+		
+		System.out.printf("Your score is %d%n because of that your " , score);
+		
+		if ( score >= 90) {  //score need to be higher than 90 to get below -> grade
+			grade = 'A';
+			if (score >= 98) { // if its higher than 98 then there are difference coming which is plus and minus.
+				opt ='+';
+			}else if (score < 94) {
+				opt = '-';
+			}
+			// ' n '학점 맞기위한 1대 조건은 90점 이상이지만 A-와  A+라는 변수가 존재하기에 if, else if로 추가해준다.
+
+		
+		}else if ( score >= 80) {  
+	grade = 'B';
+	if (score >= 88) { 
+		opt ='+';
+	}else if (score < 84) {
+		opt = '-';
+		
+		
+	}
+	
+	
+		}else if ( score >= 70) { 
+	grade = 'C';
+	if (score >= 78) { 
+		opt ='+';
+	}else if (score < 74) {
+		opt = '-';
+	}
+		} else { 
+			grade = 'F';
+		}
+		System.out.printf("Your grade is %c %n" ,grade , opt );
+// Mostly test score are required to have A,B,C,D and F which is 5 grades but I simplified it to 3 actual grade and one fail 
+		
+
+		
+		
+
+	}
+
+}
