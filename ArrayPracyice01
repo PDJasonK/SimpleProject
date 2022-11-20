@@ -1,0 +1,25 @@
+package ArrayPractice;
+import java.util.Arrays;
+public class Main01 {
+
+	public static void main(String[] args) {
+		
+		int [] num1 = {1,2,3} ;
+		
+		int [] [] num2 = {
+				{1,2,3} ,{4,5,6} ,{7},{8,9,10}, {11,12,13}
+				
+	};
+		System.out.println(num1 + "배열자체를 프린트 할 수없음.");
+
+		
+		//1차원배열일경우에 배열의 값을 프린트하는 방식이다.
+
+		System.out.println(Arrays.toString(num1) + " -Arrays.toString() 을사용하여 프린트가능");
+
+		System.out.println(Arrays.toString(num2) + "다차원 배열은 위의 1차원가달리 같은 방법으로는 출력할수는 없다. ") ;
+		
+		System.out.println(Arrays.deepToString(num2) + "다차원은 deppToString더깊게간다는 의미로하면 되나보다!");
+	}
+
+}
