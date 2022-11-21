@@ -26,7 +26,6 @@ public class ssn {
 				System.out.println("This socail security numbers are not avaiable");
 		
 		}
-ddddddfd
 	}
 
 }
